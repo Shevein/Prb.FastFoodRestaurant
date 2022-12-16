@@ -1,0 +1,34 @@
+﻿<Window x:Class="Prb.FastFoodRestaurant.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.FastFoodRestaurant.Wpf"
+        mc:Ignorable="d"
+        Title="Frituur DEKLERCK" Height="450" Width="800" Loaded="Window_Loaded" Background="#FFFAF4CE">
+    <Grid Background="#FFFAF4CE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="___No_Name_" Content="Klant :" HorizontalAlignment="Left" Margin="24,35,0,0" VerticalAlignment="Top" Grid.RowSpan="2" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="79,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.RowSpan="2" TextChanged="TxtName_TextChanged" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbFries" HorizontalAlignment="Left" Margin="79,77,0,0" VerticalAlignment="Top" Width="120" Grid.RowSpan="2" FontWeight="Bold"/>
+        <Label x:Name="___No_Name__Copy" Content="Frietjes:" HorizontalAlignment="Left" Margin="15,74,0,0" VerticalAlignment="Top" Grid.RowSpan="2" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="___No_Name__Copy1" Content="Burger :" HorizontalAlignment="Left" Margin="14,114,0,0" VerticalAlignment="Top" Grid.RowSpan="2" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbBurger" HorizontalAlignment="Left" Margin="79,117,0,0" VerticalAlignment="Top" Width="120" Grid.RowSpan="2" FontWeight="Bold"/>
+        <CheckBox x:Name="ckbMayonaise" Content="Mayonaise" HorizontalAlignment="Left" Margin="79,163,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Checked="CkbMayonaise_Checked"/>
+        <CheckBox x:Name="ckbKetchup" Content="Ketchup" HorizontalAlignment="Left" Margin="79,190,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Button x:Name="btnOrder" Content="BESTEL" HorizontalAlignment="Left" Margin="79,227,0,0" VerticalAlignment="Top" Height="22" Width="120" Grid.RowSpan="2" Click="BtnOrder_Click" FontWeight="Bold"/>
+        <ListBox x:Name="lstOverview" Grid.RowSpan="2" Margin="247,16,400,217" Background="#FFFAF4CE" FontWeight="Bold"/>
+        <Button x:Name="btnConfirm" Content="BEVESTIG" HorizontalAlignment="Left" Margin="264,227,0,0" VerticalAlignment="Top" Height="22" Width="120" Grid.RowSpan="2" Click="BtnConfirm_Click" FontWeight="Bold"/>
+        <ListBox x:Name="lstPay" Grid.RowSpan="2" Margin="443,16,204,217" Background="#FFFAF4CE" FontWeight="Bold"/>
+        <Button x:Name="btnPay" Content="BETAAL" HorizontalAlignment="Left" Margin="460,227,0,0" VerticalAlignment="Top" Height="22" Width="120" Grid.RowSpan="2" Click="BtnPay_Click" FontWeight="Bold"/>
+        <Button x:Name="btnChange" Content="WIJZIG" HorizontalAlignment="Left" Margin="264,260,0,0" VerticalAlignment="Top" Height="22" Width="120" Grid.RowSpan="2" Click="BtnChange_Click" FontWeight="Bold"/>
+        <Label x:Name="lblTicket" Content="" HorizontalAlignment="Left" Margin="610,16,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="201" Width="180" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Aantal klanten" HorizontalAlignment="Left" Margin="10,294,0,0" Grid.RowSpan="2" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBlock x:Name="tbkNumberOfCustomers" HorizontalAlignment="Left" Margin="129,299,0,0" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnPrint" Content="PRINT" HorizontalAlignment="Left" Margin="640,227,0,0" VerticalAlignment="Top" Height="22" Width="120" Grid.RowSpan="2" Click="BtnPrint_Click" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
